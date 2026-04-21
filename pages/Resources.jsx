@@ -71,6 +71,7 @@ export default function Resources() {
                 <div className="font-display text-sm font-bold text-gray-900 leading-snug group-hover:text-accent transition-colors">
                   {r.name}
                 </div>
+                {r.topic && <div className="text-xs font-mono text-gray-400 bg-gray-50 rounded px-2 py-0.5 w-fit">📌 {r.topic}</div>}
                 <div className="text-xs text-gray-400 leading-relaxed flex-1">{r.desc}</div>
                 <div className="text-xs font-mono text-accent flex items-center gap-1 mt-auto">
                   ↗ Open resource
